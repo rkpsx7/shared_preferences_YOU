@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">shared_preferences_YOU</string>
+    <string name="enter_name_hint">Enter name</string>
+    <string name="enter_first_name">Enter first name</string>
+    <string name="enter_last_name">Enter Last name</string>
+    <string name="enter_email_hint">Enter email</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
 </resources>
