@@ -1,9 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="147dp"
     tools:context=".SecondAcivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/TvFistName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="22dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/TvLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TvFistName"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="22dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/TvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TvLastName"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="22dp"
+        android:gravity="center" />
+
+
+    <EditText
+        android:id="@+id/etSeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TvEmail"
+        android:layout_margin="23dp"
+        android:hint="@string/enter_no_of_seats" />
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etSeat"
+        android:layout_margin="23dp"
+        android:layout_marginTop="18dp"
+        android:hint="@string/enter_date_hint" />
+
+    <Button
+        android:id="@+id/BtnProTo3rd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="Proceed"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

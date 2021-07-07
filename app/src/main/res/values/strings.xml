@@ -5,4 +5,6 @@
     <string name="enter_last_name">Enter Last name</string>
     <string name="enter_email_hint">Enter email</string>
     <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="enter_no_of_seats">Enter No of seats</string>
+    <string name="enter_date_hint">Enter Date</string>
 </resources>
