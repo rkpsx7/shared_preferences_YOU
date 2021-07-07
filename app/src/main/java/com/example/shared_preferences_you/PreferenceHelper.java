@@ -16,9 +16,19 @@ public class PreferenceHelper {
         editor.putInt(key, value);
         editor.apply();
     }
+    public static void writeLongToPreferences(Context context, String key, long value) {
+        SharedPreferences.Editor editor = sharedPreferences(context).edit();
+        editor.putLong(key, value);
+        editor.apply();
+    }
+
     //getting the integer value
     public static int getFromPreferences(Context context,String key){
        return sharedPreferences(context).getInt(key,0);
+    }
+
+    public static long getLongFromPreferences(Context context,String key){
+        return sharedPreferences(context).getLong(key,0);
     }
 
     public static void writeStringToPreferences(Context context,String key,String value){

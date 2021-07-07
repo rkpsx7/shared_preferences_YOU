@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
                 PreferenceHelper.writeStringToPreferences(MainActivity.this,"fname",mEtFirstName.getText().toString());
                 PreferenceHelper.writeStringToPreferences(MainActivity.this,"lname",mEtLastName.getText().toString());
                 PreferenceHelper.writeStringToPreferences(MainActivity.this,"email",mEtEmail.getText().toString());
-                PreferenceHelper.writeIntToPreferences(MainActivity.this,"phoneNo", Integer.parseInt(mEtPhoneNo.getText().toString()));
+                PreferenceHelper.writeLongToPreferences(MainActivity.this,"phoneNo", Long.parseLong(mEtPhoneNo.getText().toString()));
                 startActivity(intent);
             }
         });

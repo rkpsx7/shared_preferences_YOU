@@ -10,8 +10,9 @@ import android.widget.TextView;
 
 public class LastActivity extends AppCompatActivity {
 
-    private TextView mtvName,mtvLastN,mtvEmail,mtvPhoneNo,mtvNoOfSeats,mtvDate;
+    private TextView mtvName, mtvLastN, mtvEmail, mtvPhoneNo, mtvNoOfSeats, mtvDate;
     private Button mbtnConfirm;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,9 +28,9 @@ public class LastActivity extends AppCompatActivity {
         String fname = PreferenceHelper.getStringFromPreferences(LastActivity.this, "fname");
         String lname = PreferenceHelper.getStringFromPreferences(LastActivity.this, "lname");
         String email = PreferenceHelper.getStringFromPreferences(LastActivity.this, "email");
-        String phNO = PreferenceHelper.getFromPreferences(LastActivity.this, "phoneNo")+"";
-        String seats = PreferenceHelper.getFromPreferences(LastActivity.this, "NoOfSeats")+"";
-        String date = PreferenceHelper.getStringFromPreferences(LastActivity.this, "Date")+"";
+        String phNO = PreferenceHelper.getLongFromPreferences(LastActivity.this, "phoneNo") + "";
+        String seats = PreferenceHelper.getFromPreferences(LastActivity.this, "NoOfSeats") + "";
+        String date = PreferenceHelper.getStringFromPreferences(LastActivity.this, "Date") + "";
 
         mtvName.setText(fname);
         mtvLastN.setText(lname);
@@ -42,11 +43,7 @@ public class LastActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 new AlertDialog.Builder(LastActivity.this)
-                        .setTitle("Event Conformation")
-                        .setMessage( "the event is confirmed on "+mtvDate.getText().toString())
-                        .show();
-
-
+                        .setTitle("Event Conformation").setMessage("the event is confirmed on " + mtvDate.getText().toString()).show();
             }
         });
 
